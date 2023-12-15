@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CitanjeClass.cs" />
+    <Compile Include="CitanjeFajlova.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PROGNOZIRANI_LOAD.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
