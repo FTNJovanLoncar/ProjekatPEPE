@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{06063CED-BFFD-4627-BBEC-CD29BE82FC44}</ProjectGuid>
+    <ProjectGuid>{BD4D2D72-3E15-4F44-B5FA-6BEC7374E709}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Projekat_NRS</RootNamespace>
-    <AssemblyName>Projekat NRS</AssemblyName>
+    <RootNamespace>Projekat_ERS</RootNamespace>
+    <AssemblyName>Projekat ERS</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

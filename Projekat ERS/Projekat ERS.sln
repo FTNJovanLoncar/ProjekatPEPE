@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33529.622
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projekat NRS", "Projekat NRS\Projekat NRS.csproj", "{06063CED-BFFD-4627-BBEC-CD29BE82FC44}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projekat ERS", "Projekat ERS\Projekat ERS.csproj", "{BD4D2D72-3E15-4F44-B5FA-6BEC7374E709}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{06063CED-BFFD-4627-BBEC-CD29BE82FC44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{06063CED-BFFD-4627-BBEC-CD29BE82FC44}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{06063CED-BFFD-4627-BBEC-CD29BE82FC44}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{06063CED-BFFD-4627-BBEC-CD29BE82FC44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD4D2D72-3E15-4F44-B5FA-6BEC7374E709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD4D2D72-3E15-4F44-B5FA-6BEC7374E709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD4D2D72-3E15-4F44-B5FA-6BEC7374E709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD4D2D72-3E15-4F44-B5FA-6BEC7374E709}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E0B056AD-5AA6-4E02-9230-E54EC3D13AFB}
+		SolutionGuid = {3136E4F7-CDE4-4446-BAB5-476A9A8654F8}
 	EndGlobalSection
 EndGlobal

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Projekat NRS")]
+[assembly: AssemblyTitle("Projekat ERS")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Projekat NRS")]
+[assembly: AssemblyProduct("Projekat ERS")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("06063ced-bffd-4627-bbec-cd29be82fc44")]
+[assembly: Guid("bd4d2d72-3e15-4f44-b5fa-6bec7374e709")]
 
 // Version information for an assembly consists of the following four values:
 //
