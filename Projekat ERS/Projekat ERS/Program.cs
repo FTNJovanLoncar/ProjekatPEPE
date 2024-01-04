@@ -10,6 +10,7 @@ namespace Projekat_ERS
     {
         static void Main(string[] args)
         {
+            //1
             CitanjeClassOstv cOstv = new CitanjeClassOstv();
             CitanjeClassProg cProg = new CitanjeClassProg();
             cOstv.Citanje();
