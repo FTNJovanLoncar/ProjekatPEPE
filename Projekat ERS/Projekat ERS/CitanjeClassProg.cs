@@ -1,35 +1,41 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
-using System.IO;
 
-namespace Projekat_ERS 
+namespace Projekat_ERS
 {
-    class CitanjeClass : CitanjeFajlova 
+    class CitanjeClassProg : CitanjeFajlova
     {
-        PROGNOZIRANI_LOAD PL;
+
+
+        public CitanjeClassProg()
+        {
+        }
+
+        private PROGNOZIRANI_LOAD PL;
         public bool EndOfStream { get; }
-        IList<PROGNOZIRANI_LOAD> lista = new List<PROGNOZIRANI_LOAD>();
-        
-        void CitanjeFajlova.Citanje()
+        List<PROGNOZIRANI_LOAD> lista = new List<PROGNOZIRANI_LOAD>();
+
+
+        public void Citanje()
         {
             XmlSerializer serz = new XmlSerializer(typeof(PROGNOZIRANI_LOAD));
 
-            FileStream read = File.OpenRead("ostv_2020_05_07.xml");
+            FileStream read = File.OpenRead("prog_2020_05_07.xml");
             StreamReader reader = new StreamReader(read);
-            
-            while (!reader.EndOfStream) {
+
+            while (!reader.EndOfStream)
+            {
 
                 var result = (PROGNOZIRANI_LOAD)(serz.Deserialize(read));
                 PL = result;
                 lista.Add(PL);
             }
         }
-
-
-        
     }
 }
+
