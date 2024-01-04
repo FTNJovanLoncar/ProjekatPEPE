@@ -35,6 +35,15 @@ namespace Projekat_ERS
                 PL = result;
                 lista.Add(PL);
             }
+
+            foreach(PROGNOZIRANI_LOAD pp in lista)
+            {
+                if(pp.Sat > 25)
+                {
+                    Console.WriteLine("Greska u XML fajlu potrosnja ne moze biti veca od 25h u jednom danu");
+                    return;
+                }
+            }
         }
     }
 }
