@@ -43,7 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CitanjeClass.cs" />
+    <Compile Include="CitanjeClassOstv.cs" />
+    <Compile Include="CitanjeClassProg.cs" />
     <Compile Include="CitanjeFajlova.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
