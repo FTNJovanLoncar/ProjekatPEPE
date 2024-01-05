@@ -28,27 +28,32 @@ namespace Projekat_ERS
             StreamReader reader = new StreamReader(read);
 
 
-
-            while (!reader.EndOfStream)
+            try
             {
-
-                XmlDocument xmlDoc = new XmlDocument();
-                xmlDoc.Load("prog_2020_05_07.xml");
-
-                XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/PROGNOZIRANI_LOAD/STAVKA");
-                foreach (XmlNode node in nodeList)
+                while (!reader.EndOfStream)
                 {
-                    PL.Sat = int.Parse(node.SelectSingleNode("SAT").InnerText);
-                    PL.Load = int.Parse(node.SelectSingleNode("LOAD").InnerText);
-                    PL.Oblast = node.SelectSingleNode("OBLAST").InnerText;
-                    Console.WriteLine(PL.Sat + " " + PL.Load + " " + PL.Oblast);
-                    lista.Add(PL);
-                }
 
+                    XmlDocument xmlDoc = new XmlDocument();
+                    xmlDoc.Load("prog_2020_05_07.xml");
+
+                    XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/PROGNOZIRANI_LOAD/STAVKA");
+                    foreach (XmlNode node in nodeList)
+                    {
+                        PL.Sat = int.Parse(node.SelectSingleNode("SAT").InnerText);
+                        PL.Load = int.Parse(node.SelectSingleNode("LOAD").InnerText);
+                        PL.Oblast = node.SelectSingleNode("OBLAST").InnerText;
+                        Console.WriteLine(PL.Sat + " " + PL.Load + " " + PL.Oblast);
+                        lista.Add(PL);
+                    }
+
+                }
+            }catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
             }
 
 
-                foreach (PROGNOZIRANI_LOAD pp in lista)
+            foreach (PROGNOZIRANI_LOAD pp in lista)
             {
                 if(pp.Sat > 25)
                 {
