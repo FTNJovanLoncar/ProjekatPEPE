@@ -10,10 +10,8 @@ namespace Projekat_ERS
     {
         static void Main(string[] args)
         {
-            //promena
             CitanjeClassOstv cOstv = new CitanjeClassOstv();
             CitanjeClassProg cProg = new CitanjeClassProg();
-            cOstv.Citanje();
             Console.WriteLine("Unesite 1 za ostv, ili 2 za prog");
             int broj = int.Parse(Console.ReadLine());
             if (broj == 1) {

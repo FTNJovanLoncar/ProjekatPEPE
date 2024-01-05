@@ -5,3 +5,10 @@ C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\ob
 C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\obj\Debug\Projekat ERS.csproj.CoreCompileInputs.cache
 C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\obj\Debug\Projekat ERS.exe
 C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\obj\Debug\Projekat ERS.pdb
+C:\Users\Filip\Documents\GitHub\ProjekatPEPE\Projekat ERS\Projekat ERS\obj\Debug\Projekat ERS.csproj.AssemblyReference.cache
+C:\Users\Filip\Documents\GitHub\ProjekatPEPE\Projekat ERS\Projekat ERS\obj\Debug\Projekat ERS.csproj.CoreCompileInputs.cache
+C:\Users\Filip\Documents\GitHub\ProjekatPEPE\Projekat ERS\Projekat ERS\obj\Debug\Projekat ERS.exe
+C:\Users\Filip\Documents\GitHub\ProjekatPEPE\Projekat ERS\Projekat ERS\obj\Debug\Projekat ERS.pdb
+C:\Users\Filip\Documents\GitHub\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\Projekat ERS.exe.config
+C:\Users\Filip\Documents\GitHub\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\Projekat ERS.exe
+C:\Users\Filip\Documents\GitHub\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\Projekat ERS.pdb
