@@ -26,7 +26,7 @@ namespace Projekat_ERS
         {
             FileStream read = File.OpenRead("prog_2020_05_07.xml");
             StreamReader reader = new StreamReader(read);
-
+            string line;
 
             try
             {
@@ -45,7 +45,11 @@ namespace Projekat_ERS
                         Console.WriteLine(PL.Sat + " " + PL.Load + " " + PL.Oblast);
                         lista.Add(PL);
                     }
-
+                    line = Console.ReadLine();
+                    if (line == "</PROGNOZIRANI_LOAD>")
+                    {
+                        break;
+                    }
                 }
             }catch (Exception ex)
             {

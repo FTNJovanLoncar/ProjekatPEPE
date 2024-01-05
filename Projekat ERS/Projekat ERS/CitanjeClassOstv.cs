@@ -27,7 +27,7 @@ namespace Projekat_ERS
 
             FileStream read = File.OpenRead("ostv_2020_05_07.xml");
             StreamReader reader = new StreamReader(read);
-
+            string line;
 
             try
             {
@@ -48,7 +48,12 @@ namespace Projekat_ERS
                         lista.Add(PL);
 
                     }
-
+                    
+                    line = Console.ReadLine();
+                    if (line == "</PROGNOZIRANI_LOAD>")
+                    {
+                        break;
+                    }
                 }
             }catch(Exception ex)
         {
