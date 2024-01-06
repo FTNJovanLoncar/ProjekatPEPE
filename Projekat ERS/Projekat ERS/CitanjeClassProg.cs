@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 
 namespace Projekat_ERS
 {
-    class CitanjeClassProg : CitanjeFajlova
+    class CitanjeClassProg : ICitanjeFajlova
     {
 
         public CitanjeClassProg()
@@ -19,6 +19,7 @@ namespace Projekat_ERS
         private PROGNOZIRANI_LOAD PL = new PROGNOZIRANI_LOAD();
         public bool EndOfStream { get; }
         List<PROGNOZIRANI_LOAD> lista = new List<PROGNOZIRANI_LOAD>();
+
 
 
         public void Citanje()
@@ -44,28 +45,33 @@ namespace Projekat_ERS
                             Console.WriteLine("Greska u XML fajlu potrosnja ne moze biti veca od 25h u jednom danu");
                             AuditTabela.Audit();
                             AuditError.LogErrorToOracleAudit(errorMessage);
-                           
+
                         }
                         PL.Load = int.Parse(node.SelectSingleNode("LOAD").InnerText);
                         PL.Oblast = node.SelectSingleNode("OBLAST").InnerText;
                         Console.WriteLine(PL.Sat + " " + PL.Load + " " + PL.Oblast);
-                        lista.Add(PL);
+                        lista.Add(new PROGNOZIRANI_LOAD(PL.Sat, PL.Load, PL.Oblast));
                     }
-                   
+
                     line = Console.ReadLine();
                     if (line == "</PROGNOZIRANI_LOAD>")
                     {
                         break;
                     }
                 }
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
             }
-
-           
-            
         }
+        public List<PROGNOZIRANI_LOAD> uzimanjeListe()
+        {
+            return lista;
+        }
+        
     }
 }
+
+
 

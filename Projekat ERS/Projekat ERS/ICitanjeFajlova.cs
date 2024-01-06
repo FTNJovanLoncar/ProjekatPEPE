@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projekat_ERS
 {
-    interface CitanjeFajlova
+    interface ICitanjeFajlova
     {
         void Citanje();
     }

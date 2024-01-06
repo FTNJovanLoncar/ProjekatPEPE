@@ -12,6 +12,8 @@ namespace Projekat_ERS
         {
             CitanjeClassOstv cOstv = new CitanjeClassOstv();
             CitanjeClassProg cProg = new CitanjeClassProg();
+            IspisClass ispis = new IspisClass();
+            
             Console.WriteLine("Unesite 1 za ostv, ili 2 za prog");
             int broj = int.Parse(Console.ReadLine());
             if (broj == 1) {
@@ -21,6 +23,8 @@ namespace Projekat_ERS
             {
                 cProg.Citanje();
             }
+
+            ispis.Ispis(broj);
         }
     }
 }
