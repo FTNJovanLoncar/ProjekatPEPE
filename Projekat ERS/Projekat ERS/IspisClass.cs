@@ -60,7 +60,11 @@ namespace Projekat_ERS
                     load.InnerText = "prog_2020_05_07.xml";
                     load.AppendChild(imeFajla);
                 }
-                
+
+                XmlElement vrem = dokument.CreateElement("Vreme");
+                vreme = DateTime.Now;
+                vrem.InnerText = vreme.ToString();
+                load.AppendChild(vrem);
 
                 XmlElement oblast = dokument.CreateElement("OBLAST");
                 oblast.InnerText = pp.Oblast.ToString();

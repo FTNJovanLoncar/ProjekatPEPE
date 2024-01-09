@@ -63,3 +63,25 @@ C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debu
 C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.ValueTuple.xml
 C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERS\obj\Debug\Projekat ERS.csproj.CopyComplete
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.Buffers.dll
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.Formats.Asn1.dll
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.Memory.dll
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.Text.Json.dll
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.ValueTuple.dll
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.Buffers.xml
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.Formats.Asn1.xml
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.Memory.xml
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.Text.Json.xml
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\bin\Debug\System.ValueTuple.xml
+C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERS\obj\Debug\Projekat ERS.csproj.CopyComplete
