@@ -51,6 +51,7 @@ namespace Projekat_ERS
                         PL.Oblast = node.SelectSingleNode("OBLAST").InnerText;
                         Console.WriteLine(PL.Sat + " " + PL.Load + " " + PL.Oblast);
                         lista.Add(new PROGNOZIRANI_LOAD(PL.Sat, PL.Load, PL.Oblast));
+
                     }
 
                     line = Console.ReadLine();

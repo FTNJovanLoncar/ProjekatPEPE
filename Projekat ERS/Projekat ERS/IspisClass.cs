@@ -14,6 +14,8 @@ namespace Projekat_ERS
         CitanjeClassOstv ostv = new CitanjeClassOstv();
         CitanjeClassProg prog = new CitanjeClassProg();
 
+        DateTime vreme;
+
         public void Preuzimanje(int a)
         {
             if (a == 1)
@@ -34,7 +36,7 @@ namespace Projekat_ERS
             dokument.AppendChild(declaration);
 
             XmlElement root = dokument.CreateElement("PROGNOZIRANI_LOAD");
-            dokument.AppendChild(declaration);
+            dokument.AppendChild(root);
 
             XmlElement stavka = dokument.CreateElement("STAVKA");
             root.AppendChild(stavka);
@@ -42,17 +44,36 @@ namespace Projekat_ERS
             foreach (PROGNOZIRANI_LOAD pp in lista)
             {
 
-                XmlElement sat = dokument.CreateElement("SAT");
-                sat.InnerText = pp.Sat.ToString();
-                stavka.AppendChild(sat);
-
                 XmlElement load = dokument.CreateElement("LOAD");
                 load.InnerText = pp.Load.ToString();
                 stavka.AppendChild(load);
 
+                if (a == 1) 
+                {
+                    XmlElement imeFajla = dokument.CreateElement("ImeFajla");
+                    load.InnerText = "ostv_2020_05_07.xml";
+                    load.AppendChild(imeFajla);
+                }
+                else if(a == 2)
+                {
+                    XmlElement imeFajla = dokument.CreateElement("ImeFajla");
+                    load.InnerText = "prog_2020_05_07.xml";
+                    load.AppendChild(imeFajla);
+                }
+                
+
                 XmlElement oblast = dokument.CreateElement("OBLAST");
                 oblast.InnerText = pp.Oblast.ToString();
                 stavka.AppendChild(oblast);
+                foreach(PROGNOZIRANI_LOAD pe in lista)
+                {
+                    if(pp.Oblast == pe.Oblast)
+                    {
+                        XmlElement sat = dokument.CreateElement("SAT");
+                        sat.InnerText = pp.Sat.ToString();
+                        oblast.AppendChild(sat);
+                    }
+                }
 
             }
 
@@ -66,7 +87,7 @@ namespace Projekat_ERS
                 dokument.Save("prog.xml");
             }
 
-            Console.WriteLine("XML file created successfully.");
+            Console.WriteLine("XML fajl napravljen.");
 
         }
     }
