@@ -15,6 +15,8 @@ namespace Projekat_ERS
         {
         }
 
+        List<DateTime> listaVremena = new List<DateTime>();
+        DateTime vreme = DateTime.Now;
 
         private PROGNOZIRANI_LOAD PL = new PROGNOZIRANI_LOAD();
         public bool EndOfStream { get; }
@@ -54,6 +56,8 @@ namespace Projekat_ERS
                         PL.Oblast = node.SelectSingleNode("OBLAST").InnerText;
                         Console.WriteLine(PL.Sat + " " + PL.Load + " " + PL.Oblast);
                         lista.Add(new PROGNOZIRANI_LOAD(PL.Sat, PL.Load, PL.Oblast));
+                        vreme = DateTime.Now;
+                        listaVremena.Add(vreme);
                     }
 
                     line = Console.ReadLine();
@@ -72,6 +76,10 @@ namespace Projekat_ERS
         public List<PROGNOZIRANI_LOAD> uzimanjeListe()
         {
             return lista;
+        }
+        public List<DateTime> uzimanjeListeVremena()
+        {
+            return listaVremena;
         }
     }
 }

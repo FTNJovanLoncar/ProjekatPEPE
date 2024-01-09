@@ -13,7 +13,7 @@ namespace Projekat_ERS
 
         CitanjeClassOstv ostv = new CitanjeClassOstv();
         CitanjeClassProg prog = new CitanjeClassProg();
-
+        List<DateTime> listaVremena = new List<DateTime>();
         DateTime vreme;
 
         public void Preuzimanje(int a)
@@ -21,10 +21,12 @@ namespace Projekat_ERS
             if (a == 1)
             {
                 lista = ostv.uzimanjeListe();
+                listaVremena = ostv.uzimanjeListeVremena();
             }
             else if(a == 2)
             {
                 lista = prog.uzimanjeListe();
+                listaVremena = prog.uzimanjeListeVremena();
             }
         }
 
@@ -61,10 +63,14 @@ namespace Projekat_ERS
                     load.AppendChild(imeFajla);
                 }
 
-                XmlElement vrem = dokument.CreateElement("Vreme");
-                vreme = DateTime.Now;
-                vrem.InnerText = vreme.ToString();
-                load.AppendChild(vrem);
+                int i = 0;
+                if (i > lista.Count)
+                i = 0;
+                    XmlElement vrem = dokument.CreateElement("Vreme");
+                    vrem.InnerText = listaVremena[i].ToString();
+                    load.AppendChild(vrem);
+                    i++;
+                
 
                 XmlElement oblast = dokument.CreateElement("OBLAST");
                 oblast.InnerText = pp.Oblast.ToString();
