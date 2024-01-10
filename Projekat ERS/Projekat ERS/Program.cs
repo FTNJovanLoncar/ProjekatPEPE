@@ -13,18 +13,13 @@ namespace Projekat_ERS
             CitanjeClassOstv cOstv = new CitanjeClassOstv();
             CitanjeClassProg cProg = new CitanjeClassProg();
             IspisClass ispis = new IspisClass();
-            
+            IspisOP prognoza = new IspisOP();
             Console.WriteLine("Unesite 1 za ostv, ili 2 za prog");
             int broj = int.Parse(Console.ReadLine());
-            if (broj == 1) {
-                cOstv.Citanje();
-            }
-            else if(broj == 2)
-            {
-                cProg.Citanje();
-            }
-
+            cOstv.Citanje();
+            cProg.Citanje();
             ispis.Ispis(broj);
+            prognoza.ispisOstvarenojPotrosnji();
         }
     }
 }

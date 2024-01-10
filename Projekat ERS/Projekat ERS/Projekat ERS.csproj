@@ -85,7 +85,9 @@
     <Compile Include="CitanjeClassProg.cs" />
     <Compile Include="ICitanjeFajlova.cs" />
     <Compile Include="IIspis.cs" />
+    <Compile Include="IIspisOP.cs" />
     <Compile Include="IspisClass.cs" />
+    <Compile Include="IspisOP.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PROGNOZIRANI_LOAD.cs" />

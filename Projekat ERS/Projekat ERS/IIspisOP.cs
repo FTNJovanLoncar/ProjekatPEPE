@@ -8,5 +8,6 @@ namespace Projekat_ERS
 {
     interface IIspisOP
     {
+        void ispisOstvarenojPotrosnji();
     }
 }
