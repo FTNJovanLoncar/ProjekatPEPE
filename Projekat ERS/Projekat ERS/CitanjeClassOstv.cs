@@ -58,15 +58,13 @@ namespace Projekat_ERS
                         lista.Add(new PROGNOZIRANI_LOAD(PL.Sat, PL.Load, PL.Oblast));
                         vreme = DateTime.Now;
                         listaVremena.Add(vreme);
-                        line = Console.ReadLine();
+                       
                         
                     }
 
-                    line = Console.ReadLine();
-                    if (line == "</PROGNOZIRANI_LOAD>")
-                    {
+                   
                         break;
-                    }
+                    
                 }
             }
             catch (Exception ex)
