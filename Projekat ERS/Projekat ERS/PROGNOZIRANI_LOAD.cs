@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projekat_ERS
 {
-    class PROGNOZIRANI_LOAD
+    public class PROGNOZIRANI_LOAD
     {
         private int sat;
         private int load;

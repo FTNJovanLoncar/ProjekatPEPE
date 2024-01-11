@@ -58,8 +58,12 @@
   <ItemGroup>
     <Compile Include="CitanjeClassOstvTests.cs" />
     <Compile Include="CitanjeClassProgTests.cs" />
+    <Compile Include="CSVfileTests.cs" />
     <Compile Include="Geografska_OblastTests.cs" />
     <Compile Include="IspisClassTests.cs" />
+    <Compile Include="IspisOPTests.cs" />
+    <Compile Include="PodaciGeoOblastiTests.cs" />
+    <Compile Include="PROGNOZIRANI_LOADTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
