@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Projekat_ERS
 {
-    class CSVfile
+   public class CSVfile
     {
         public CSVfile(){
         }
