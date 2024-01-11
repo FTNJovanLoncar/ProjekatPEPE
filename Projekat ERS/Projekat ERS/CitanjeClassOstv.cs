@@ -11,6 +11,7 @@ namespace Projekat_ERS
 {
    public class CitanjeClassOstv : ICitanjeFajlova
     {
+
         public CitanjeClassOstv()
         {
         }
