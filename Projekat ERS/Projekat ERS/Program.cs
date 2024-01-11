@@ -15,6 +15,8 @@ namespace Projekat_ERS
             IspisClass ispis = new IspisClass();
             IspisOP prognoza = new IspisOP();
             Geografska_Oblast geo = new Geografska_Oblast();
+            cProg.AuditTabela();
+            cOstv.AuditTabela();
             Console.WriteLine("Unesite 1 za ostv, ili 2 za prog");
             int broj = int.Parse(Console.ReadLine());
             cOstv.Citanje();

@@ -17,7 +17,6 @@ namespace Projekat_ERS
 
         public List<DateTime> listaVremena = new List<DateTime>();
         DateTime vreme = DateTime.Now;
-        private int counter = 0;
 
         private PROGNOZIRANI_LOAD PL = new PROGNOZIRANI_LOAD();
         public bool EndOfStream { get; }
@@ -26,7 +25,24 @@ namespace Projekat_ERS
 
         private List<PROGNOZIRANI_LOAD> lista = new List<PROGNOZIRANI_LOAD>();
 
-       
+        public void AuditTabela()
+        {
+            // KREIRANJE AUDIT TABELE
+
+            XmlDocument xmlDok = new XmlDocument();
+            XmlDeclaration xmlDeclaration = xmlDok.CreateXmlDeclaration("1.0", "UTF-8", null);
+            xmlDok.AppendChild(xmlDeclaration);
+
+            XmlElement audit = xmlDok.CreateElement("AUDIT_TABELA");
+            xmlDok.AppendChild(audit);
+         
+            xmlDok.Save("audit_tabela_ostv.xml");
+
+            Console.WriteLine("Greska u listi podataka dan je preko 25 sati");
+
+            // KREIRANJE AUDIT TABELE
+        }
+
         public void Citanje()
         {
 
@@ -54,34 +70,7 @@ namespace Projekat_ERS
                             Console.WriteLine("Greska u XML fajlu potrosnja ne moze biti veca od 25h u jednom danu");
                             // AuditTabela.Audit();
                             // AuditError.LogErrorToOracleAudit(errorMessage);
-                            if (counter == 0)
-                            {
-                                XmlDocument xmlDok = new XmlDocument();
-                                XmlDeclaration xmlDeclaration = xmlDoc.CreateXmlDeclaration("1.0", "UTF-8", null);
-                                xmlDoc.AppendChild(xmlDeclaration);
-
-                                XmlElement audit = xmlDoc.CreateElement("AUDIT_TABELA");
-                                xmlDoc.AppendChild(audit);
-
-                                DateTime data = DateTime.Now;
-
-                                XmlElement Greska = xmlDoc.CreateElement("GRESKA");
-                                Greska.InnerText = data.ToString();
-                                audit.AppendChild(Greska);
-
-                                XmlElement fajl = xmlDoc.CreateElement("FAJL");
-                                fajl.InnerText = "ostv_2020_05_07.xml";
-                                audit.AppendChild(fajl);
-
-
-                                xmlDoc.Save("audit_tabela_ostv.xml");
-
-                                Console.WriteLine("Greska u listi podataka dan je preko 25 sati");
-                                counter = 1;
-
-                            }
-                            else
-                            {
+                            
                                 string filePat = "audit_tabela_ostv.xml";
 
                                 XmlDocument xmlDoca = new XmlDocument();
@@ -103,10 +92,6 @@ namespace Projekat_ERS
                                 xmlDoca.Save(filePat);
 
                                 Console.WriteLine("Greska u listi podataka dan je preko 25 sati");
-
-
-                            }
-
 
                         }
                         PL.Load = int.Parse(node.SelectSingleNode("LOAD").InnerText);
