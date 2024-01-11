@@ -21,6 +21,7 @@ namespace Projekat_ERS
             int broj = int.Parse(Console.ReadLine());
             cOstv.Citanje();
             cProg.Citanje();
+            cProg.AuditGreske();
             prognoza.ispisOstvarenojPotrosnji();
             geo.geo_oblast();
             ispis.preuzimanje(broj);

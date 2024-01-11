@@ -36,9 +36,7 @@ namespace Projekat_ERS
             XmlElement audit = xmlDok.CreateElement("AUDIT_TABELA");
             xmlDok.AppendChild(audit);
          
-            xmlDok.Save("audit_tabela_ostv.xml");
-
-            Console.WriteLine("Greska u listi podataka dan je preko 25 sati");
+            xmlDok.Save("audit_tabela_ostv.xml");           
 
             // KREIRANJE AUDIT TABELE
         }
@@ -49,7 +47,6 @@ namespace Projekat_ERS
             FileStream read = File.OpenRead("ostv_2020_05_07.xml");
             StreamReader reader = new StreamReader(read);
             string line;
-            string errorMessage = "Greska u XML fajlu potrosnja ne moze biti veca od 25h u jednom danu";
 
             try
             {
@@ -64,36 +61,7 @@ namespace Projekat_ERS
                     XmlNodeList nodeList = xmlDoc.DocumentElement.SelectNodes("/PROGNOZIRANI_LOAD/STAVKA");
                     foreach (XmlNode node in nodeList)
                     {
-                        PL.Sat = int.Parse(node.SelectSingleNode("SAT").InnerText);
-                        if (PL.Sat > 25)
-                        {
-                            Console.WriteLine("Greska u XML fajlu potrosnja ne moze biti veca od 25h u jednom danu");
-                            // AuditTabela.Audit();
-                            // AuditError.LogErrorToOracleAudit(errorMessage);
-                            
-                                string filePat = "audit_tabela_ostv.xml";
-
-                                XmlDocument xmlDoca = new XmlDocument();
-
-                                xmlDoca.Load(filePat);
-
-                                XmlElement greskaa = xmlDoca.CreateElement("GRESKA");
-                                DateTime dat = DateTime.Now;
-                                greskaa.InnerText = dat.ToString();
-
-                                XmlElement fajle = xmlDoca.CreateElement("FAJL");
-                                fajle.InnerText = "ostv_2020_05_07.xml";
-                                greskaa.AppendChild(fajle);
-
-                                XmlElement rootElement = xmlDoca.DocumentElement;
-
-                                rootElement.AppendChild(greskaa);
-
-                                xmlDoca.Save(filePat);
-
-                                Console.WriteLine("Greska u listi podataka dan je preko 25 sati");
-
-                        }
+                        PL.Sat = int.Parse(node.SelectSingleNode("SAT").InnerText);                      
                         PL.Load = int.Parse(node.SelectSingleNode("LOAD").InnerText);
                         PL.Oblast = node.SelectSingleNode("OBLAST").InnerText;
                         Lista.Add(new PROGNOZIRANI_LOAD(PL.Sat, PL.Load, PL.Oblast));
@@ -113,6 +81,39 @@ namespace Projekat_ERS
                 Console.WriteLine($"Error: {ex.Message}");
             }
 
+        }
+        public void AuditGreske()
+        {
+            foreach (PROGNOZIRANI_LOAD pp in lista)
+            {
+                if (pp.Sat > 25)
+                {
+                    Console.WriteLine("Greska u XML fajlu potrosnja ne moze biti veca od 25h u jednom danu");
+                    // AuditTabela.Audit();
+                    //  AuditError.LogErrorToOracleAudit(errorMessage);
+
+                    string filePat = "audit_tabela_prog.xml";
+
+                    XmlDocument xmlDoca = new XmlDocument();
+
+                    xmlDoca.Load(filePat);
+
+                    XmlElement greskaa = xmlDoca.CreateElement("GRESKA");
+                    DateTime dat = DateTime.Now;
+                    greskaa.InnerText = dat.ToString();
+
+                    XmlElement fajle = xmlDoca.CreateElement("FAJL");
+                    fajle.InnerText = "prog_2020_05_07.xml";
+                    greskaa.AppendChild(fajle);
+
+                    XmlElement rootElement = xmlDoca.DocumentElement;
+
+                    rootElement.AppendChild(greskaa);
+
+                    xmlDoca.Save(filePat);
+
+                }
+            }
         }
     }
 }
