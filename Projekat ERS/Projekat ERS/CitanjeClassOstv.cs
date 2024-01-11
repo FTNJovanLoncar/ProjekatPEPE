@@ -9,18 +9,22 @@ using System.Xml;
 
 namespace Projekat_ERS 
 {
-    class CitanjeClassOstv : ICitanjeFajlova 
+   public class CitanjeClassOstv : ICitanjeFajlova
     {
         public CitanjeClassOstv()
         {
         }
 
-        List<DateTime> listaVremena = new List<DateTime>();
+        public List<DateTime> listaVremena = new List<DateTime>();
         DateTime vreme = DateTime.Now;
+        int counter = 0;
 
         private PROGNOZIRANI_LOAD PL = new PROGNOZIRANI_LOAD();
         public bool EndOfStream { get; }
-        List<PROGNOZIRANI_LOAD> lista = new List<PROGNOZIRANI_LOAD>();
+        public List<DateTime> ListaVremena { get => listaVremena; set => listaVremena = value; }
+        internal List<PROGNOZIRANI_LOAD> Lista { get => lista; set => lista = value; }
+
+        private List<PROGNOZIRANI_LOAD> lista = new List<PROGNOZIRANI_LOAD>();
 
        
         public void Citanje()
@@ -48,16 +52,18 @@ namespace Projekat_ERS
                         if (PL.Sat > 25)
                         {
                             Console.WriteLine("Greska u XML fajlu potrosnja ne moze biti veca od 25h u jednom danu");
-                            AuditTabela.Audit();
-                            AuditError.LogErrorToOracleAudit(errorMessage);
+                           // AuditTabela.Audit();
+                           // AuditError.LogErrorToOracleAudit(errorMessage);
+
+                            
 
                         }
                         PL.Load = int.Parse(node.SelectSingleNode("LOAD").InnerText);
                         PL.Oblast = node.SelectSingleNode("OBLAST").InnerText;
                         Console.WriteLine(PL.Sat + " " + PL.Load + " " + PL.Oblast);
-                        lista.Add(new PROGNOZIRANI_LOAD(PL.Sat, PL.Load, PL.Oblast));
+                        Lista.Add(new PROGNOZIRANI_LOAD(PL.Sat, PL.Load, PL.Oblast));
                         vreme = DateTime.Now;
-                        listaVremena.Add(vreme);
+                        ListaVremena.Add(vreme);
                        
                         
                     }
@@ -72,14 +78,6 @@ namespace Projekat_ERS
                 Console.WriteLine($"Error: {ex.Message}");
             }
 
-        }
-        public List<PROGNOZIRANI_LOAD> uzimanjeListe()
-        {
-            return lista;
-        }
-        public List<DateTime> uzimanjeListeVremena()
-        {
-            return listaVremena;
         }
     }
 }

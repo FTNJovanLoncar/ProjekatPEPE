@@ -14,12 +14,19 @@ namespace Projekat_ERS
             CitanjeClassProg cProg = new CitanjeClassProg();
             IspisClass ispis = new IspisClass();
             IspisOP prognoza = new IspisOP();
+            Geografska_Oblast geo = new Geografska_Oblast();
             Console.WriteLine("Unesite 1 za ostv, ili 2 za prog");
             int broj = int.Parse(Console.ReadLine());
             cOstv.Citanje();
             cProg.Citanje();
+            
+            ispis.listaaa();
+            geo.geo_oblast();
+            prognoza.printListe();
+            ispis.preuzimanje(broj);
             ispis.Ispis(broj);
             prognoza.ispisOstvarenojPotrosnji();
+            
         }
     }
 }

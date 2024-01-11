@@ -7,27 +7,38 @@ using System.Xml;
 
 namespace Projekat_ERS
 {
-    class IspisClass : IIspis
+    class IspisClass : IIspis 
     {
-        List<PROGNOZIRANI_LOAD> lista = new List<PROGNOZIRANI_LOAD>();
+       List<PROGNOZIRANI_LOAD> lista = new List<PROGNOZIRANI_LOAD>();
 
+       List<DateTime> listaVremena = new List<DateTime>();
         CitanjeClassOstv ostv = new CitanjeClassOstv();
         CitanjeClassProg prog = new CitanjeClassProg();
-        List<DateTime> listaVremena = new List<DateTime>();
-        DateTime vreme;
+        int i = 0;
 
-        public void Preuzimanje(int a)
+        public void preuzimanje(int a)
         {
-            if (a == 1)
+            if(a == 1)
             {
-                lista = ostv.uzimanjeListe();
-                listaVremena = ostv.uzimanjeListeVremena();
+                listaVremena = ostv.ListaVremena;
+                lista = ostv.Lista;
+                
             }
             else if(a == 2)
             {
-                lista = prog.uzimanjeListe();
-                listaVremena = prog.uzimanjeListeVremena();
+                lista = prog.Lista;
+                listaVremena = prog.ListaVremena;
             }
+        }
+
+        public void listaaa()
+        {
+            lista = ostv.Lista;
+            foreach(PROGNOZIRANI_LOAD pp in lista)
+            {
+                Console.WriteLine(pp.Sat);
+            }
+            Console.WriteLine("Zasto");
         }
 
         public void Ispis(int a)
@@ -37,68 +48,46 @@ namespace Projekat_ERS
             XmlDeclaration declaration = dokument.CreateXmlDeclaration("1.0", "UTF-8", null);
             dokument.AppendChild(declaration);
 
-            XmlElement root = dokument.CreateElement("PROGNOZIRANI_LOAD");
+            XmlElement root = dokument.CreateElement("PROGNOZIRANI_LOAD"); 
             dokument.AppendChild(root);
-
-            XmlElement stavka = dokument.CreateElement("STAVKA");
-            root.AppendChild(stavka);
 
             foreach (PROGNOZIRANI_LOAD pp in lista)
             {
+                XmlElement stavka = dokument.CreateElement("STAVKA");
 
                 XmlElement load = dokument.CreateElement("LOAD");
                 load.InnerText = pp.Load.ToString();
+
+                XmlElement imeFajla = dokument.CreateElement("ImeFajla");
+                imeFajla.InnerText = (a == 1) ? "ostv_2020_05_07.xml" : "prog_2020_05_07.xml";
+                load.AppendChild(imeFajla);
+
+                if(i > listaVremena.Count())
+                {
+                    i = 0;
+                }
+                XmlElement vrem = dokument.CreateElement("Vreme");
+                vrem.InnerText = listaVremena[0].ToString();
+                load.AppendChild(vrem);
+                i++;
+
                 stavka.AppendChild(load);
 
-                if (a == 1) 
-                {
-                    XmlElement imeFajla = dokument.CreateElement("ImeFajla");
-                    load.InnerText = "ostv_2020_05_07.xml";
-                    load.AppendChild(imeFajla);
-                }
-                else if(a == 2)
-                {
-                    XmlElement imeFajla = dokument.CreateElement("ImeFajla");
-                    load.InnerText = "prog_2020_05_07.xml";
-                    load.AppendChild(imeFajla);
-                }
-
-                int i = 0;
-                if (i > lista.Count)
-                i = 0;
-                    XmlElement vrem = dokument.CreateElement("Vreme");
-                    vrem.InnerText = listaVremena[i].ToString();
-                    load.AppendChild(vrem);
-                    i++;
-                
-
                 XmlElement oblast = dokument.CreateElement("OBLAST");
-                oblast.InnerText = pp.Oblast.ToString();
+                oblast.InnerText = pp.Oblast;
+
+                XmlElement sat = dokument.CreateElement("SAT");
+                sat.InnerText = pp.Sat.ToString();
+                oblast.AppendChild(sat);
+
                 stavka.AppendChild(oblast);
-                foreach(PROGNOZIRANI_LOAD pe in lista)
-                {
-                    if(pp.Oblast == pe.Oblast)
-                    {
-                        XmlElement sat = dokument.CreateElement("SAT");
-                        sat.InnerText = pp.Sat.ToString();
-                        oblast.AppendChild(sat);
-                    }
-                }
-
+                root.AppendChild(stavka);
             }
 
-
-            if (a == 1)
-            {
-                dokument.Save("ostv.xml");
-            }
-            else if (a == 2)
-            {
-                dokument.Save("prog.xml");
-            }
+            string fileName = (a == 1) ? "ostv.xml" : "prog.xml";
+            dokument.Save(fileName);
 
             Console.WriteLine("XML fajl napravljen.");
-
         }
     }
 }
