@@ -22,7 +22,6 @@ namespace Projekat_ERS
             
             ispis.listaaa();
             geo.geo_oblast();
-            prognoza.printListe();
             ispis.preuzimanje(broj);
             ispis.Ispis(broj);
             prognoza.ispisOstvarenojPotrosnji();

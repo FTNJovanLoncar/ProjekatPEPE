@@ -24,15 +24,7 @@ namespace Projekat_ERS
 
         }
 
-        public void printListe()
-        {
-            progLista = prog.Lista;
-            Console.WriteLine("Nesto");
-            foreach (PROGNOZIRANI_LOAD pp in progLista)
-            {
-                Console.WriteLine(pp.Sat);
-            }
-        }
+      
         public void ispisOstvarenojPotrosnji()
         {
             OstvLista = ostv.Lista;

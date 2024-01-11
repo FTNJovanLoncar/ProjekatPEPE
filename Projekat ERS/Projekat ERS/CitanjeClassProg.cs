@@ -26,6 +26,7 @@ namespace Projekat_ERS
 
         private List<PROGNOZIRANI_LOAD> lista = new List<PROGNOZIRANI_LOAD>();
 
+        private int counter = 0;
 
 
         public void Citanje()
@@ -49,8 +50,60 @@ namespace Projekat_ERS
                         if (PL.Sat > 25)
                         {
                             Console.WriteLine("Greska u XML fajlu potrosnja ne moze biti veca od 25h u jednom danu");
-                           // AuditTabela.Audit();
-                          //  AuditError.LogErrorToOracleAudit(errorMessage);
+                            // AuditTabela.Audit();
+                            //  AuditError.LogErrorToOracleAudit(errorMessage);
+                            if (counter == 0)
+                            {
+                                XmlDocument xmlDok = new XmlDocument();
+                                XmlDeclaration xmlDeclaration = xmlDoc.CreateXmlDeclaration("1.0", "UTF-8", null);
+                                xmlDoc.AppendChild(xmlDeclaration);
+
+                                XmlElement audit = xmlDoc.CreateElement("AUDIT_TABELA");
+                                xmlDoc.AppendChild(audit);
+
+                                DateTime data = DateTime.Now;
+
+                                XmlElement Greska = xmlDoc.CreateElement("GRESKA");
+                                Greska.InnerText = data.ToString();
+                                audit.AppendChild(Greska);
+
+                                XmlElement fajl = xmlDoc.CreateElement("FAJL");
+                                fajl.InnerText = "prog_2020_05_07.xml";
+                                audit.AppendChild(fajl);
+
+
+                                xmlDoc.Save("audit_tabela_prog.xml");
+
+                                Console.WriteLine("Greska u listi podataka dan je preko 25 sati");
+                                counter = 1;
+
+                            }
+                            else
+                            {
+                                string filePat = "audit_tabela_prog.xml";
+
+                                XmlDocument xmlDoca = new XmlDocument();
+
+                                xmlDoca.Load(filePat);
+
+                                XmlElement greskaa = xmlDoca.CreateElement("GRESKA");
+                                DateTime dat = DateTime.Now;
+                                greskaa.InnerText = dat.ToString();
+
+                                XmlElement fajle = xmlDoca.CreateElement("FAJL");
+                                fajle.InnerText = "prog_2020_05_07.xml";
+                                greskaa.AppendChild(fajle);
+
+                                XmlElement rootElement = xmlDoca.DocumentElement;
+
+                                rootElement.AppendChild(greskaa);
+
+                                xmlDoca.Save(filePat);
+
+                                Console.WriteLine("Greska u listi podataka dan je preko 25 sati");
+
+
+                            }
 
                         }
                         PL.Load = int.Parse(node.SelectSingleNode("LOAD").InnerText);
