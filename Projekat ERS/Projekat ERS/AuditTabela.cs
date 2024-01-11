@@ -8,6 +8,7 @@ using Oracle.ManagedDataAccess.Client;
 
 namespace Projekat_ERS
 {
+    // ova klasa je pokusaj preko SQL
     class AuditTabela
     {
 

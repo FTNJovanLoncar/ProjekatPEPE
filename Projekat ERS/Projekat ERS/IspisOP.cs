@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -68,7 +69,7 @@ namespace Projekat_ERS
 
             for (int i = 0; i < OstvLista.Count() ; i++)
             {
-                if (god == ostvVremeLista[i].Year && mes == ostvVremeLista[i].Month && dan == ostvVremeLista[i].Day && oblast == OstvLista[i].Oblast)
+                if (god == ostvVremeLista[i].Year && mes == ostvVremeLista[i].Month && dan == ostvVremeLista[i].Day && oblast == progLista[i].Oblast)
                 { 
 
                 tabela += "---------------------------Tabela relativnog odstupanja---------------------------\n";
@@ -77,12 +78,12 @@ namespace Projekat_ERS
                 tabela += OstvLista[i].Sat.ToString();
                 tabela += "\n";
                 tabela += "LoadProg: ";
-                tabela += OstvLista[i].Load.ToString();
+                tabela += progLista[i].Load.ToString();
                 tabela += "\n";
                 tabela += "LoadOstv: ";
                 tabela += OstvLista[i].Load.ToString();
                 tabela += "\n";
-                potrosnja = ((Convert.ToDouble(OstvLista[i].Load) - 2020) / Convert.ToDouble(OstvLista[i].Load)) * 100;
+                potrosnja = ((Convert.ToDouble(OstvLista[i].Load) - Convert.ToDouble(progLista[i].Load)) / Convert.ToDouble(OstvLista[i].Load)) * 100;
                 tabela += "Potrosnja: ";
                 tabela += potrosnja.ToString();    
                 tabela += "\n";
@@ -93,6 +94,22 @@ namespace Projekat_ERS
                 }
             }           
             Console.WriteLine(tabela);
+            string filePath = "output.csv";
+
+            try
+            {
+                
+                using (StreamWriter sw = new StreamWriter(filePath))
+                {
+                    sw.WriteLine(tabela);
+                 
+                    Console.WriteLine($"CSV file napravljen na {filePath}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
         }
     }
 }

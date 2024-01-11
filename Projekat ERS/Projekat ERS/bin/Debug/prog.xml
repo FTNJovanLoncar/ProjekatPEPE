@@ -1,2 +1,195 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<PROGNOZIRANI_LOAD />
+<PROGNOZIRANI_LOAD>
+  <STAVKA>
+    <LOAD>3185<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>1</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>2831<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>2</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>2619<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>3</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>2587<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>4</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>2550<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>26</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>2618<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>6</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3041<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>7</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3550<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>8</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3748<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>9</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3794<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>10</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3783<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>11</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3824<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>12</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3747<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>13</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3607<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>14</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3548<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>15</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3490<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>16</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3500<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>17</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3427<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>18</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3572<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>19</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3791<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>20</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>4017<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>21</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>4193<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>22</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3907<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>23</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3700<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>VOJ<SAT>24</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3290<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>1</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3181<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>2</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>2939<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>3</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>2427<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>4</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>2642<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>5</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>2748<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>6</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3441<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>7</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3510<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>8</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3733<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>9</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3764<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>10</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3383<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>11</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3874<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>12</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3247<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>13</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3797<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>14</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3148<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>15</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3136<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>16</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3200<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>17</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3417<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>18</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3692<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>19</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3621<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>20</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>4157<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>21</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>4393<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>22</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3997<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>23</SAT></OBLAST>
+  </STAVKA>
+  <STAVKA>
+    <LOAD>3820<ImeFajla>prog_2020_05_07.xml</ImeFajla><Vreme>11.1.2024. 18:33:40</Vreme></LOAD>
+    <OBLAST>BGD<SAT>24</SAT></OBLAST>
+  </STAVKA>
+</PROGNOZIRANI_LOAD>

@@ -62,7 +62,6 @@ namespace Projekat_ERS
                     foreach (XmlNode node in nodeList)
                     {
                         PL.Sat = int.Parse(node.SelectSingleNode("SAT").InnerText);
-                       
                         PL.Load = int.Parse(node.SelectSingleNode("LOAD").InnerText);
                         PL.Oblast = node.SelectSingleNode("OBLAST").InnerText;  
                         Lista.Add(new PROGNOZIRANI_LOAD(PL.Sat, PL.Load, PL.Oblast));

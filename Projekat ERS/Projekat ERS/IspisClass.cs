@@ -28,7 +28,7 @@ namespace Projekat_ERS
             }
             else if (a == 2)
             {
-                ostv.Citanje();
+                prog.Citanje();
                 lista = prog.Lista;
                 listaVremena = prog.ListaVremena;
             }

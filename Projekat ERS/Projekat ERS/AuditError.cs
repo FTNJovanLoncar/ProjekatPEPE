@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Oracle.ManagedDataAccess.Client;
 namespace Projekat_ERS
 {
+
+    // ova klasa je pokusaj preko SQL
     class AuditError
     {
         public static void LogErrorToOracleAudit(string errorMessage)

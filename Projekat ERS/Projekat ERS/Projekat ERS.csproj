@@ -83,6 +83,7 @@
     <Compile Include="AuditTabela.cs" />
     <Compile Include="CitanjeClassOstv.cs" />
     <Compile Include="CitanjeClassProg.cs" />
+    <Compile Include="CSVfile.cs" />
     <Compile Include="Geografska_Oblast.cs" />
     <Compile Include="ICitanjeFajlova.cs" />
     <Compile Include="IGeografska_oblast.cs" />
