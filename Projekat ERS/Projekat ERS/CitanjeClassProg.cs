@@ -107,8 +107,7 @@ namespace Projekat_ERS
 
                         }
                         PL.Load = int.Parse(node.SelectSingleNode("LOAD").InnerText);
-                        PL.Oblast = node.SelectSingleNode("OBLAST").InnerText;
-                        Console.WriteLine(PL.Sat + " " + PL.Load + " " + PL.Oblast);
+                        PL.Oblast = node.SelectSingleNode("OBLAST").InnerText;  
                         Lista.Add(new PROGNOZIRANI_LOAD(PL.Sat, PL.Load, PL.Oblast));
                         vreme = DateTime.Now;
                         ListaVremena.Add(vreme);
@@ -126,14 +125,7 @@ namespace Projekat_ERS
                 Console.WriteLine($"Error: {ex.Message}");
             }
         }
-        public void printListe()
-        {
-            foreach(PROGNOZIRANI_LOAD pp in Lista)
-            {
-                Console.WriteLine(pp.Sat);
-            }
-        }
-
+     
     }
 }
 

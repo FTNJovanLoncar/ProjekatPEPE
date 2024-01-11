@@ -31,15 +31,6 @@ namespace Projekat_ERS
             }
         }
 
-        public void listaaa()
-        {
-            lista = ostv.Lista;
-            foreach(PROGNOZIRANI_LOAD pp in lista)
-            {
-                Console.WriteLine(pp.Sat);
-            }
-            Console.WriteLine("Zasto");
-        }
 
         public void Ispis(int a)
         {

@@ -111,7 +111,6 @@ namespace Projekat_ERS
                         }
                         PL.Load = int.Parse(node.SelectSingleNode("LOAD").InnerText);
                         PL.Oblast = node.SelectSingleNode("OBLAST").InnerText;
-                        Console.WriteLine(PL.Sat + " " + PL.Load + " " + PL.Oblast);
                         Lista.Add(new PROGNOZIRANI_LOAD(PL.Sat, PL.Load, PL.Oblast));
                         vreme = DateTime.Now;
                         ListaVremena.Add(vreme);

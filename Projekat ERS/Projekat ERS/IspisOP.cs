@@ -16,7 +16,7 @@ namespace Projekat_ERS
         List<DateTime> ostvVremeLista = new List<DateTime>();
         List<DateTime> progVremeLista = new List<DateTime>();
         private string tabela ="";
-
+        private double potrosnja;
         internal List<PROGNOZIRANI_LOAD> OstvLista { get => ostvLista; set => ostvLista = value; }
 
         public IspisOP()
@@ -27,11 +27,15 @@ namespace Projekat_ERS
       
         public void ispisOstvarenojPotrosnji()
         {
+            ostv.Citanje();
+            prog.Citanje();
             OstvLista = ostv.Lista;
             ostvVremeLista = ostv.ListaVremena;
 
             progLista = prog.Lista;
             progVremeLista = prog.ListaVremena;
+
+           
 
             Console.WriteLine("Unesite geografsku oblast: ");
             string oblast = Console.ReadLine();
@@ -60,33 +64,34 @@ namespace Projekat_ERS
             {
                 Console.WriteLine("Greska pri unosu dana");
             }
-            int potrosnja;
+            
 
-            for (int i = 0; i < 24; i++)
+            for (int i = 0; i < OstvLista.Count() ; i++)
             {
-                if (god == progVremeLista[i].Year && mes == progVremeLista[i].Month && dan == progVremeLista[i].Day && oblast == progLista[i].Oblast)
+                if (god == ostvVremeLista[i].Year && mes == ostvVremeLista[i].Month && dan == ostvVremeLista[i].Day && oblast == OstvLista[i].Oblast)
                 { 
 
-                    tabela += "---------------------------Tabela relativnog odstupanja---------------------------\n";
+                tabela += "---------------------------Tabela relativnog odstupanja---------------------------\n";
                 tabela += "\n";
                 tabela += "Sat: ";
-                tabela += progLista[1].Sat.ToString();
+                tabela += OstvLista[i].Sat.ToString();
                 tabela += "\n";
                 tabela += "LoadProg: ";
-                tabela += progLista[1].Load.ToString();
+                tabela += OstvLista[i].Load.ToString();
                 tabela += "\n";
                 tabela += "LoadOstv: ";
-                tabela += OstvLista[1].Load.ToString();
+                tabela += OstvLista[i].Load.ToString();
                 tabela += "\n";
-                potrosnja = ((OstvLista[1].Load - progLista[1].Load) / OstvLista[1].Load) * 100;
+                potrosnja = ((Convert.ToDouble(OstvLista[i].Load) - 2020) / Convert.ToDouble(OstvLista[i].Load)) * 100;
                 tabela += "Potrosnja: ";
-                tabela += potrosnja.ToString();
+                tabela += potrosnja.ToString();    
+                tabela += "\n";
                 tabela += "---------------------------------------------------------------------------------";
                 tabela += "\n";
                 tabela += "\n";
 
-            }
-        }           
+                }
+            }           
             Console.WriteLine(tabela);
         }
     }

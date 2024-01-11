@@ -19,13 +19,12 @@ namespace Projekat_ERS
             int broj = int.Parse(Console.ReadLine());
             cOstv.Citanje();
             cProg.Citanje();
-            
-            ispis.listaaa();
+            prognoza.ispisOstvarenojPotrosnji();
             geo.geo_oblast();
             ispis.preuzimanje(broj);
             ispis.Ispis(broj);
-            prognoza.ispisOstvarenojPotrosnji();
             
+            Console.ReadLine();
         }
     }
 }
