@@ -7,7 +7,7 @@ using System.Xml;
 
 namespace Projekat_ERS
 {
-    class IspisClass : IIspis 
+   public class IspisClass : IIspis 
     {
        List<PROGNOZIRANI_LOAD> lista = new List<PROGNOZIRANI_LOAD>();
 
@@ -79,5 +79,6 @@ namespace Projekat_ERS
 
             Console.WriteLine("XML fajl napravljen.");
         }
+
     }
 }

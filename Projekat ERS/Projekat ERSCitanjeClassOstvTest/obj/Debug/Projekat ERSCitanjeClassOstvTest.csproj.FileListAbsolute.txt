@@ -36,3 +36,41 @@ C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERSCit
 C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\obj\Debug\Projekat ERSCitanjeClassOstvTest.csproj.CopyComplete
 C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\obj\Debug\Projekat ERSCitanjeClassOstvTest.dll
 C:\Users\Korisnik\Desktop\Projekat ERS\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\obj\Debug\Projekat ERSCitanjeClassOstvTest.pdb
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\Projekat ERSCitanjeClassOstvTest.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\Projekat ERSCitanjeClassOstvTest.pdb
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\Projekat ERS.exe
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.Text.Json.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.Formats.Asn1.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.Memory.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.ValueTuple.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.Buffers.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\Projekat ERS.pdb
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\Projekat ERS.exe.config
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.Text.Json.xml
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.Formats.Asn1.xml
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.Memory.xml
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.ValueTuple.xml
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.Buffers.xml
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\obj\Debug\Projekat ERSCitanjeClassOstvTest.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\obj\Debug\Projekat ERSCitanjeClassOstvTest.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\obj\Debug\Projekat ERSCitanjeClassOstvTest.csproj.CopyComplete
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\obj\Debug\Projekat ERSCitanjeClassOstvTest.dll
+C:\Users\PC\Desktop\ProjekatPEPE\ProjekatPEPE\Projekat ERS\Projekat ERSCitanjeClassOstvTest\obj\Debug\Projekat ERSCitanjeClassOstvTest.pdb
