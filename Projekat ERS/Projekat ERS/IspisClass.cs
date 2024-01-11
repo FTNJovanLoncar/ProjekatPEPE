@@ -16,24 +16,23 @@ namespace Projekat_ERS
         CitanjeClassProg prog = new CitanjeClassProg();
         int i = 0;
 
-        public void preuzimanje(int a)
+        
+        public void Ispis(int a)
         {
-            if(a == 1)
+            if (a == 1)
             {
+                ostv.Citanje();
                 listaVremena = ostv.ListaVremena;
                 lista = ostv.Lista;
-                
+
             }
-            else if(a == 2)
+            else if (a == 2)
             {
+                ostv.Citanje();
                 lista = prog.Lista;
                 listaVremena = prog.ListaVremena;
             }
-        }
 
-
-        public void Ispis(int a)
-        {
             XmlDocument dokument = new XmlDocument();
 
             XmlDeclaration declaration = dokument.CreateXmlDeclaration("1.0", "UTF-8", null);

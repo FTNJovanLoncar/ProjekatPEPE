@@ -24,7 +24,6 @@ namespace Projekat_ERS
             cProg.AuditGreske();
             prognoza.ispisOstvarenojPotrosnji();
             geo.geo_oblast();
-            ispis.preuzimanje(broj);
             ispis.Ispis(broj);
             
             Console.ReadLine();
